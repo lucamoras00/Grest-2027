@@ -56,3 +56,8 @@ footer span{color:#54c8ff;font-size:1.6em}
 .contact-copy{text-align:center}
 .map-heading{justify-content:center;text-align:center}
 .map-heading>div{text-align:center}
+
+/* Sezione iscrizione animatori */
+.animator-signup{margin-top:28px;background:#fff8d9}
+.animator-signup h2{color:var(--blue)}
+.animator-signup .form-button{max-width:100%}
