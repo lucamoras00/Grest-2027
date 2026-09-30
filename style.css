@@ -1,16 +1,49 @@
-*{box-sizing:border-box} :root{--blue:#0869d8;--deep-blue:#064a9f;--yellow:#ffdf24;--ink:#12376a}
-body{margin:0;background:#f5faff;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.5}
-.hero{display:flex;flex-direction:column;align-items:center;padding:0 0 26px;background:#e8f7ff}
-.hero img{display:block;width:100%;height:auto;object-fit:cover}
-.cta{display:inline-flex;justify-content:center;align-items:center;gap:18px;margin:18px auto 0;padding:15px 30px;border:4px solid #fff;border-radius:999px;background:var(--blue);color:var(--yellow);text-decoration:none;font-size:clamp(1.15rem,3vw,1.55rem);font-weight:900;letter-spacing:.04em;box-shadow:0 5px 0 var(--deep-blue),0 8px 18px #073e8730;transition:transform .15s}
-.cta:hover{transform:translateY(-2px)}
-.details{display:flex;justify-content:center;flex-wrap:wrap;gap:18px;width:min(92%,900px);margin:26px auto}
-.info{display:flex;align-items:center;gap:16px;flex:1 1 260px;max-width:420px;min-height:126px;padding:20px 24px;border-radius:22px;background:#e1f5ff}
-.info:nth-child(2){background:#fff8d9}.icon{font-size:2.4rem}
-.info h2,.signup h2{margin:0 0 4px;color:var(--deep-blue);font-size:1.05rem;font-weight:900}
-.info p{margin:0;font-size:1.1rem}
-.signup{width:min(92%,700px);margin:0 auto 20px;padding:24px;border-radius:22px;background:white;text-align:center;box-shadow:0 5px 20px #12376a0d}
-.signup h2{font-size:1.5rem}.signup p{margin:8px 0 0}.secondary{margin-top:16px;font-size:1rem}
-.privacy{width:min(92%,700px);margin:0 auto 28px;color:#536b88;font-size:.9rem;text-align:center}
-footer{padding:18px;background:var(--deep-blue);color:white;font-weight:700;text-align:center}
-@media(max-width:560px){.hero{padding-bottom:22px}.cta{max-width:90%;padding:13px 22px;font-size:1.05rem}.details{gap:12px;margin:18px auto}.info{min-height:100px;padding:16px 18px}.signup{padding:20px 16px}}
+*{box-sizing:border-box}
+:root{--blue:#0869d8;--deep:#064a9f;--yellow:#ffdf24;--ink:#12376a}
+html{scroll-behavior:smooth}
+body{margin:0;background:#f3faff;color:var(--ink);font-family:'Nunito',Arial,sans-serif;line-height:1.5}
+main{width:100%;overflow:hidden}
+.hero{display:flex;flex-direction:column;align-items:center;background:#e5f7ff;padding:0 0 24px}
+.hero-art{display:block;width:100%;height:auto;object-fit:cover}
+.button{display:inline-flex;align-items:center;justify-content:center;gap:14px;padding:15px 28px;border:4px solid #fff;border-radius:999px;background:var(--blue);color:var(--yellow);font-family:'Baloo 2','Nunito',sans-serif;font-size:clamp(1.2rem,3vw,1.65rem);font-weight:800;line-height:1.15;letter-spacing:.035em;text-align:center;text-decoration:none;box-shadow:0 6px 0 var(--deep),0 9px 18px #064a9f26;transition:transform .16s ease,box-shadow .16s ease}
+.button:hover{transform:translateY(-2px);box-shadow:0 8px 0 var(--deep),0 12px 20px #064a9f26}
+.button:focus-visible{outline:4px solid #ff9e22;outline-offset:4px}
+.hero-button{min-width:min(82%,350px);margin:4px auto 0}
+.facts{display:flex;justify-content:center;align-items:stretch;flex-wrap:wrap;gap:20px;width:min(92%,960px);margin:28px auto}
+.fact{display:flex;align-items:center;gap:18px;flex:1 1 300px;max-width:460px;min-height:145px;padding:22px 28px;border-radius:26px;background:#def4ff}
+.fact-place{background:#fff8d9}
+.fact-icon{flex:0 0 auto;font-size:2.8rem}
+.fact h2,.signup h2{margin:0 0 5px;color:var(--blue);font-family:'Baloo 2','Nunito',sans-serif;font-size:clamp(1.45rem,3vw,1.9rem);font-weight:800;line-height:1.15}
+.fact p{margin:0;font-size:clamp(1.05rem,2.3vw,1.25rem);font-weight:700}
+.signup{width:min(92%,960px);margin:0 auto 28px;padding:30px 24px 25px;border-radius:28px;background:#fff;text-align:center;box-shadow:0 7px 24px #12376a0c}
+.signup h2{font-size:clamp(1.8rem,4vw,2.3rem)}
+.signup>p:not(.privacy){margin:6px auto 0;font-size:clamp(1rem,2.4vw,1.2rem);font-weight:600}
+.form-button{margin:20px auto 0;font-size:clamp(1rem,2.7vw,1.35rem)}
+.privacy{max-width:780px;margin:20px auto 0;color:#536b88;font-size:.9rem;font-weight:600}
+footer{display:flex;justify-content:center;align-items:center;gap:24px;padding:22px 14px;background:var(--deep);color:white;font-family:'Baloo 2','Nunito',sans-serif;font-size:clamp(1.1rem,3vw,1.5rem);font-weight:800;text-align:center}
+footer span{color:#54c8ff;font-size:1.6em}
+@media(max-width:560px){.hero{padding-bottom:20px}.hero-button{margin-top:2px}.facts{gap:12px;margin:18px auto}.fact{min-height:112px;padding:17px 20px;border-radius:22px}.fact-icon{font-size:2.2rem}.signup{padding:24px 16px 20px;border-radius:22px}.button{max-width:92%;padding:13px 20px}footer{gap:12px}}
+
+/* Contatti e posizione */
+.contact-section{width:min(92%,960px);margin:0 auto 30px;padding:28px 24px;border-radius:28px;background:#e8f7ff;text-align:center}
+.contact-section>h2{margin:0;color:var(--blue);font-family:'Baloo 2','Nunito',sans-serif;font-size:clamp(1.8rem,4vw,2.3rem);font-weight:800;line-height:1.2}
+.contact-intro{margin:7px auto 20px;font-size:1.05rem;font-weight:600}
+.contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:0 auto 20px}
+.contact-card{display:flex;align-items:center;gap:14px;min-width:0;padding:18px 20px;border-radius:22px;background:#fff;text-align:left}
+.contact-card:nth-child(2){background:#fff8d9}
+.contact-icon{flex:0 0 auto;font-size:2.1rem}
+.contact-copy{min-width:0}
+.contact-copy h3,.map-heading h3{margin:0 0 3px;color:var(--deep);font-family:'Baloo 2','Nunito',sans-serif;font-size:1.25rem;font-weight:800}
+.contact-copy a{color:#075fbd;font-weight:800;overflow-wrap:anywhere;text-decoration:underline;text-underline-offset:3px}
+.map-card{overflow:hidden;border:3px solid #fff;border-radius:24px;background:#fff;text-align:left;box-shadow:0 5px 18px #12376a0b}
+.map-heading{display:flex;align-items:center;gap:14px;padding:18px 20px}
+.map-pin{font-size:2rem}
+.map-heading p{margin:0;font-weight:600}
+.map-frame{width:100%;height:310px;background:#e1f5ff}
+.map-frame iframe{display:block;width:100%;height:100%;border:0}
+.map-link{display:block;padding:14px 18px;color:#075fbd;font-weight:900;text-align:center;text-decoration:none}
+.map-link:hover{text-decoration:underline}
+@media(max-width:620px){.contact-section{padding:23px 15px;border-radius:22px}.contact-grid{grid-template-columns:1fr;gap:12px}.contact-card{padding:16px}.map-frame{height:260px}.map-heading{align-items:flex-start;padding:16px}.map-heading p{font-size:.95rem}}
+
+.second-contact-title{margin-top:10px!important}
+.contact-email{background:#fff!important}
