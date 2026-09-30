@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" role="img" aria-labelledby="title">
+<title id="title">Bambini che giocano in un prato soleggiato</title>
+<defs>
+  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#83d1ff"/><stop offset="1" stop-color="#dff5ff"/></linearGradient>
+</defs>
+<rect width="900" height="330" rx="24" fill="url(#sky)"/>
+<circle cx="760" cy="66" r="37" fill="#ffd84d"/>
+<g stroke="#ffd84d" stroke-width="8" stroke-linecap="round"><path d="M760 12v-9M760 129v-9M706 66h-12M826 66h-12M722 28l-8-8M806 110l-8-8M798 28l8-8M714 110l8-8"/></g>
+<g fill="#fff" opacity=".9"><ellipse cx="120" cy="75" rx="52" ry="18"/><ellipse cx="150" cy="65" rx="32" ry="26"/><ellipse cx="178" cy="78" rx="38" ry="16"/><ellipse cx="540" cy="52" rx="44" ry="15"/><ellipse cx="567" cy="44" rx="27" ry="22"/><ellipse cx="594" cy="55" rx="34" ry="14"/></g>
+<path d="M0 235Q160 205 320 237T640 228T900 230V330H0Z" fill="#75c96c"/>
+<path d="M0 270Q180 240 360 268T700 260T900 264V330H0Z" fill="#4eaf58"/>
+<g fill="#fff18b"><path d="M78 282l5 10 11 1-8 7 2 11-10-6-10 6 2-11-8-7 11-1z"/><path d="M830 254l4 9 10 1-7 6 2 10-9-5-9 5 2-10-7-6 10-1z"/></g>
+<!-- child left -->
+<g transform="translate(210 135)">
+ <path d="M-26 74l-19 63M24 74l22 63" stroke="#244c86" stroke-width="17" stroke-linecap="round"/>
+ <path d="M-48 137h-22M46 137h22" stroke="#ff784f" stroke-width="12" stroke-linecap="round"/>
+ <path d="M-42 10Q0-10 42 10L34 82Q0 98-34 82Z" fill="#ffcf38"/>
+ <circle cy="-15" r="34" fill="#f2b27e"/>
+ <path d="M-34-21Q-29-57 5-49Q35-47 37-15L20-29 4-35-17-23Z" fill="#5a3828"/>
+ <circle cx="-12" cy="-16" r="3.5" fill="#26364d"/><circle cx="12" cy="-16" r="3.5" fill="#26364d"/>
+ <path d="M-10 0q10 10 20 0" fill="none" stroke="#9b4e40" stroke-width="3" stroke-linecap="round"/>
+ <path d="M-35 22l-31-28M35 22l30-30" stroke="#f2b27e" stroke-width="15" stroke-linecap="round"/>
+</g>
+<!-- child center -->
+<g transform="translate(450 155)">
+ <path d="M-25 76l-22 67M25 76l24 67" stroke="#244c86" stroke-width="18" stroke-linecap="round"/>
+ <path d="M-50 143h-18M50 143h18" stroke="#ff784f" stroke-width="12" stroke-linecap="round"/>
+ <path d="M-43 14Q0-4 43 14L34 84Q0 97-34 84Z" fill="#1684d8"/>
+ <circle cy="-13" r="35" fill="#d99463"/>
+ <path d="M-35-21Q-26-55 7-49Q35-43 37-10L18-31-2-34-22-22Z" fill="#3d2b25"/>
+ <circle cx="-12" cy="-14" r="3.5" fill="#26364d"/><circle cx="12" cy="-14" r="3.5" fill="#26364d"/>
+ <path d="M-11 2q11 11 22 0" fill="none" stroke="#8d4138" stroke-width="3" stroke-linecap="round"/>
+ <path d="M-38 24l-30-24M38 24l31-24" stroke="#d99463" stroke-width="15" stroke-linecap="round"/>
+</g>
+<!-- child right -->
+<g transform="translate(680 143)">
+ <path d="M-25 75l-18 64M25 75l19 64" stroke="#244c86" stroke-width="17" stroke-linecap="round"/>
+ <path d="M-45 139h-20M44 139h20" stroke="#ff784f" stroke-width="12" stroke-linecap="round"/>
+ <path d="M-42 12Q0-5 42 12L34 82Q0 95-34 82Z" fill="#ec69a5"/>
+ <circle cy="-15" r="34" fill="#f0bd91"/>
+ <path d="M-34-23Q-27-55 6-49Q38-44 38-5L27-22Q14-34 0-32L-22-18Z" fill="#75452e"/>
+ <path d="M-28-6Q-39 28-26 47" fill="none" stroke="#75452e" stroke-width="10" stroke-linecap="round"/>
+ <circle cx="-12" cy="-16" r="3.5" fill="#26364d"/><circle cx="12" cy="-16" r="3.5" fill="#26364d"/>
+ <path d="M-10 0q10 10 20 0" fill="none" stroke="#9b4e40" stroke-width="3" stroke-linecap="round"/>
+ <path d="M-36 22l-30-27M36 22l31-27" stroke="#f0bd91" stroke-width="15" stroke-linecap="round"/>
+</g>
+</svg>
