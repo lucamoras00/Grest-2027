@@ -1,23 +1,16 @@
-* { box-sizing: border-box; }
-:root { --blue: #15549a; --sky: #eaf6ff; --yellow: #ffd84d; --orange: #ff784f; --ink: #18345b; }
-body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: #f7f9fc; line-height: 1.55; }
-.container { width: min(92%, 880px); margin: 0 auto; }
-.hero { padding: 34px 0 42px; text-align: center; background: linear-gradient(180deg, #dff2ff 0%, #f5fbff 100%); overflow: hidden; }
-.brand { color: var(--blue); font-size: clamp(2rem, 6vw, 3rem); font-weight: 900; letter-spacing: -1.5px; }
-.brand span { color: #1684d8; }
-.intro { margin: 8px 0 12px; font-size: clamp(1.05rem, 3vw, 1.35rem); font-weight: 700; }
-.kids { display: block; width: 100%; max-width: 720px; height: auto; margin: 0 auto 8px; }
-.event-info { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin: 12px auto 18px; }
-.info-card { display: flex; align-items: center; gap: 12px; text-align: left; min-width: 220px; padding: 13px 18px; background: white; border: 1px solid #e3edf6; border-radius: 16px; box-shadow: 0 4px 14px #17365b12; }
-.emoji { font-size: 1.8rem; }
-.info-card strong { color: var(--blue); font-size: .9rem; }
-.btn { display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 14px 24px; border-radius: 999px; background: var(--orange); color: white; text-decoration: none; font-weight: 800; box-shadow: 0 5px 0 #d85a37; transition: transform .15s ease; }
-.btn:hover { transform: translateY(-2px); }
-main { padding: 24px 0 36px; }
-.card { margin: 0 0 16px; padding: 22px 24px; background: white; border-radius: 16px; box-shadow: 0 4px 18px #17365b0d; text-align: center; }
-.card h2 { margin: 0 0 8px; color: var(--blue); font-size: 1.35rem; }
-.card p { margin: 0 auto; max-width: 650px; }
-.btn-secondary { margin-top: 16px; background: var(--blue); box-shadow: 0 5px 0 #0e3d73; }
-.privacy { background: #f0f7fc; box-shadow: none; }
-footer { padding: 20px; text-align: center; background: var(--blue); color: white; font-weight: 700; }
-@media (max-width: 520px) { .hero { padding-top: 26px; } .info-card { width: 100%; max-width: 340px; } .card { padding: 20px 17px; } .btn { width: 100%; max-width: 360px; } }
+*{box-sizing:border-box} :root{--blue:#0869d8;--deep-blue:#064a9f;--yellow:#ffdf24;--ink:#12376a}
+body{margin:0;background:#f5faff;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.5}
+.hero{display:flex;flex-direction:column;align-items:center;padding:0 0 26px;background:#e8f7ff}
+.hero img{display:block;width:100%;height:auto;object-fit:cover}
+.cta{display:inline-flex;justify-content:center;align-items:center;gap:18px;margin:18px auto 0;padding:15px 30px;border:4px solid #fff;border-radius:999px;background:var(--blue);color:var(--yellow);text-decoration:none;font-size:clamp(1.15rem,3vw,1.55rem);font-weight:900;letter-spacing:.04em;box-shadow:0 5px 0 var(--deep-blue),0 8px 18px #073e8730;transition:transform .15s}
+.cta:hover{transform:translateY(-2px)}
+.details{display:flex;justify-content:center;flex-wrap:wrap;gap:18px;width:min(92%,900px);margin:26px auto}
+.info{display:flex;align-items:center;gap:16px;flex:1 1 260px;max-width:420px;min-height:126px;padding:20px 24px;border-radius:22px;background:#e1f5ff}
+.info:nth-child(2){background:#fff8d9}.icon{font-size:2.4rem}
+.info h2,.signup h2{margin:0 0 4px;color:var(--deep-blue);font-size:1.05rem;font-weight:900}
+.info p{margin:0;font-size:1.1rem}
+.signup{width:min(92%,700px);margin:0 auto 20px;padding:24px;border-radius:22px;background:white;text-align:center;box-shadow:0 5px 20px #12376a0d}
+.signup h2{font-size:1.5rem}.signup p{margin:8px 0 0}.secondary{margin-top:16px;font-size:1rem}
+.privacy{width:min(92%,700px);margin:0 auto 28px;color:#536b88;font-size:.9rem;text-align:center}
+footer{padding:18px;background:var(--deep-blue);color:white;font-weight:700;text-align:center}
+@media(max-width:560px){.hero{padding-bottom:22px}.cta{max-width:90%;padding:13px 22px;font-size:1.05rem}.details{gap:12px;margin:18px auto}.info{min-height:100px;padding:16px 18px}.signup{padding:20px 16px}}
